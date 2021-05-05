@@ -1,0 +1,17 @@
+{
+    "name": "z-manager",
+    "version": "1.0.0",
+    "description": "For education purpose",
+    "main": "index.html",
+    "scripts": {
+        "start": "index.html",
+        "build:css": "npx tailwindcss build src/include-tailwind.css -o css/tailwind.css"
+    },
+    "author": "aiman anizan",
+    "license": "MIT",
+    "devDependencies": {
+        "autoprefixer": "^10.2.5",
+        "postcss": "^8.2.13",
+        "tailwindcss": "^2.1.2"
+    }
+}
