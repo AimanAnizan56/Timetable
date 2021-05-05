@@ -10,20 +10,30 @@ function extract(data) {
         const Day = Timetable[index].Day;
         const Subject = Timetable[index].Subject;
 
-        console.log(Day);
+        // console.log(Day);
+        var main_div = generate_day(Day);
         for (let index = 0; index < Subject.Name.length; index++) {
             const SubjectName = Subject.Name[index];
             const Lecturer = Subject.Lecturer[index];
             const Time = Subject.Time[index];
 
-            generate_timetable(SubjectName, Lecturer, Time);
-            // console.log("\t" + SubjectName + ": " + Time + " || " + Lecturer);
+            generate_timetable(main_div, SubjectName, Lecturer, Time);
         }
     }
 }
 
-function generate_timetable(subject, lecturer, time) {
+function generate_day(Day) {
+    var main_div = document.createElement("div");
+    var day = document.createElement("span");
+    day.className = "bg-gradient-to-r from-pink-600 to-blue-600 p-2 my-3 rounded-md shadow-inner";
+    day.appendChild(document.createTextNode(Day));
+    main_div.appendChild(day);
+    return main_div;
+}
+
+function generate_timetable(main_div, subject, lecturer, time) {
     var span_day;
+    // console.log(lecturer);
 }
 
 /* 
