@@ -8,19 +8,19 @@
                 "Lecturer": [
                     "Sir Muhammad Hamiz Mohd Radzi",
                     "PM Aishah Ahmad @ Abdul Mutalib",
-                    "Madam Afidah"
+                    "Madam Afidah Bidin"
                 ]
             }
         },
         {
             "Day": "Tuesday",
             "Subject": {
-                "Name": ["ICT500", "ISP501", "ELC501"],
-                "Time": ["10.00 am ~ 11.50 am", "2.00 pm ~ 3.50 pm", "4.00 pm ~ 5.50 pm"],
+                "Name": ["QMT437", "CTU552", "ICT500"],
+                "Time": ["8.00 am ~ 9.50 am", "9.00 am ~ 11.50 am", "2.00 pm ~ 3.50 pm"],
                 "Lecturer": [
-                    "Sir Muhammad Hamiz Mohd Radzi",
-                    "PM Aishah Ahmad @ Abdul Mutalib",
-                    "Madam Afidah"
+                    "Madam Nurul Azwa Kamarudin",
+                    "Ustazah Norizah Mohamed @ Haji Daud",
+                    "Sir Muhammad Hamiz Mohd Radzi"
                 ]
             }
         }
