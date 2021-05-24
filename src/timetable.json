@@ -16,12 +16,36 @@
             "Day": "Tuesday",
             "Subject": {
                 "Name": ["QMT437", "CTU552", "ICT500"],
-                "Time": ["8.00 am ~ 9.50 am", "9.00 am ~ 11.50 am", "2.00 pm ~ 3.50 pm"],
+                "Time": ["8.00 am ~ 9.50 am", "10.00 am ~ 11.50 am", "2.00 pm ~ 3.50 pm"],
                 "Lecturer": [
                     "Madam Nurul Azwa Kamarudin",
                     "Ustazah Norizah Mohamed @ Haji Daud",
                     "Sir Muhammad Hamiz Mohd Radzi"
                 ]
+            }
+        },
+        {
+            "Day": "Wednesday",
+            "Subject": {
+                "Name": ["ISP500", "TMC401"],
+                "Time": ["8.00 am ~ 9.50 am", "10.00 am ~ 11.50 am"],
+                "Lecturer": ["Miss Anis Afiqah", "Sir Soo Yew Phong"]
+            }
+        },
+        {
+            "Day": "Thursday",
+            "Subject": {
+                "Name": ["ISP501", "QMT437"],
+                "Time": ["10.00 am ~ 11.50 am", "2.00 pm ~ 3.50 pm"],
+                "Lecturer": ["PM Aishah Ahmad @ Abdul Mutalib", "Madam Nurul Azwa Kamarudin"]
+            }
+        },
+        {
+            "Day": "Friday",
+            "Subject": {
+                "Name": ["ISP500"],
+                "Time": ["8.00 am ~ 9.50 am"],
+                "Lecturer": ["Dr Elin Eliana"]
             }
         }
     ]

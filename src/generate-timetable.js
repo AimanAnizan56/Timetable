@@ -8,6 +8,7 @@ fetch("src/timetable.json")
 /* Extract JSON */
 function extract(data) {
     const Timetable = data.Timetable;
+    var repeat = 0;
     /* Outer loop - for day */
     for (let index = 0; index < Timetable.length; index++) {
         /* Assign day:String and Subject:Object */
@@ -27,8 +28,20 @@ function extract(data) {
             /* Call function -- generate subject */
             main_div.appendChild(generate_subject(SubjectName, Lecturer, Time));
         }
-        main_div.className =
-            "bg-gradient-to-r from-pink-600 to-blue-600 p-2 my-3 rounded-md shadow-inner";
+        if (repeat == 0) {
+            main_div.className =
+                "bg-gradient-to-r from-pink-600 to-blue-600 p-2 my-3 mx-3 rounded-md shadow-inner";
+            repeat = 1;
+        } else if (repeat == 1) {
+            main_div.className =
+                "bg-gradient-to-r from-blue-600 to-purple-600 p-2 my-3 mx-3 rounded-md shadow-inner";
+            repeat = 2;
+        } else {
+            main_div.className =
+                "bg-gradient-to-r from-purple-600 to-pink-600 p-2 my-3 mx-3 rounded-md shadow-inner";
+            repeat = 0;
+        }
+
         document.getElementById("output-timetable").appendChild(main_div);
     }
 }
