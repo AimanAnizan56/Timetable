@@ -4,8 +4,8 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-
+        <title>Timetable</title>
+        <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
         <!-- Tailwind css -->
         <link rel="stylesheet" href="css/tailwind.css" />
     </head>
@@ -16,21 +16,11 @@
                 <h1 class="font-bold">Hello,</h1>
                 <span class="font-medium">Aiman Anizan</span>
             </div>
-            <!-- Button Navigation -->
-            <div class="text-base my-2 flex flex-row overflow-x-auto">
-                <button
-                    class="bg-blue-800 px-4 py-2 rounded-3xl mx-1 focus:outline-none hover:bg-blue-900"
-                >
-                    Timetable
-                </button>
-                <button
-                    class="bg-blue-800 px-4 py-2 rounded-3xl mx-1 focus:outline-none hover:bg-blue-900"
-                >
-                    Homeworks
-                </button>
-            </div>
             <!-- Timetable -->
-            <div class="mt-5 text-2xl" id="output-timetable"></div>
+            <div
+                class="mt-5 text-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+                id="output-timetable"
+            ></div>
         </div>
 
         <script src="src/generate-timetable.js"></script>
